@@ -1,0 +1,258 @@
+:root{
+    --white : #FFFFFF;
+    --pink-color:#cf088c;
+    --dark-blue: #03091D;
+    --light-blue:#6EE8FC;
+        --gray: #4A4457;
+
+}
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    width: 100%;
+    overflow-x: hidden;
+    height: 100%;
+    overflow-y: none;
+    background: var(--dark-blue);
+    padding: 1rem;
+   
+} 
+.wrapper
+{
+    height: 100%;
+    width: 80%;
+    margin-top: 1rem;
+    margin: auto;
+    font-family: 'Inter', sans-serif;
+   
+}
+
+
+.helpsection
+{
+    display: flex;
+    justify-content: space-between;    
+}
+#mail,#login
+{
+   color: var(--white);
+   text-decoration: none;
+   display: flex;
+   gap: 0.5rem;
+   align-items: center;
+  
+}
+.navbar
+{
+   min-width: min-content;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    background-color: rgb(117, 115, 115);
+    opacity: 0.8;
+    padding: 1rem;
+}
+.fa-osi
+{
+    font-size: x-large;
+}
+.options{
+    
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+  
+}
+.options a
+{
+    text-decoration: none;
+    color:whitesmoke;
+    font-weight: 400;
+     border-color: linear-gradient(45deg, #ffd800, #ff5520, #750cf2, #0cbcf2);
+    border-width: 2px;
+} 
+.main_msg
+{
+    background-color:#49A5DD;
+    display: flex;
+    justify-content: space-around;
+    color: var(--white);
+    padding-top: 5rem;
+    margin-top: 5rem;
+}
+.rightbox
+{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 30rem;
+}
+.main_msg h1{
+    color: var(--white);
+  font-size:xx-large;
+  font-weight: 900;
+  text-align: left;
+  
+}
+.main_msg ul{
+    color: var(--white);
+    font-size: medium;
+    text-align: left;
+    font-weight: 200;
+    line-height: 2rem;
+}
+.leftbox img{
+    height: 25rem;
+    width: 22rem;
+    object-fit: contain;
+}
+.why10
+{
+    padding: 2rem;
+    background-color: #fff;
+    display: flex;
+    justify-content:space-around;
+    height: 30rem;
+    line-height: 2rem;
+}
+.why10 img
+{
+    height: 20rem;
+}
+
+.rightbox10
+{
+        width: 30rem;
+       
+}
+.btnclass
+{
+  padding: 3rem;
+   
+  
+}
+.blob-btn {
+    z-index: 1;
+    position: relative;
+    left: 30%;
+    padding: 20px 46px;
+    margin-bottom: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(173, 45, 173);
+    font-size: 16px;
+    font-weight: bold;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    transition: color 0.5s;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+.blob-btn:before {
+    content: "";
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid rgb(173, 45, 173);
+    border-radius: 30px;
+}
+
+.blob-btn:after {
+    content: "";
+    z-index: -2;
+    position: absolute;
+    left: 3px;
+    top: 3px;
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s 0.2s;
+    border-radius: 30px;
+}
+
+.blob-btn:hover {
+    color: #FFFFFF;
+    border-radius: 30px;
+}
+
+.blob-btn:hover:after {
+    transition: all 0.3s;
+    left: 0;
+    top: 0;
+    border-radius: 30px;
+}
+
+.blob-btn__inner {
+    z-index: -1;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    background: #ffffff;
+}
+
+.blob-btn__blobs {
+    position: relative;
+    display: block;
+    height: 100%;
+    filter: url("#goo");
+}
+
+.blob-btn__blob {
+    position: absolute;
+    top: 2px;
+    width: 25%;
+    height: 100%;
+    background: rgb(173, 45, 173);
+    border-radius: 100%;
+    transform: translate3d(0, 150%, 0) scale(1.7);
+    transition: transform 0.45s;
+}
+
+@supports (filter: url("#goo")) {
+    .blob-btn__blob {
+        transform: translate3d(0, 150%, 0) scale(1.4);
+    }
+}
+
+.blob-btn__blob:nth-child(1) {
+    left: 0%;
+    transition-delay: 0s;
+}
+
+.blob-btn__blob:nth-child(2) {
+    left: 30%;
+    transition-delay: 0.08s;
+}
+
+.blob-btn__blob:nth-child(3) {
+    left: 60%;
+    transition-delay: 0.16s;
+}
+
+.blob-btn__blob:nth-child(4) {
+    left: 90%;
+    transition-delay: 0.24s;
+}
+
+.blob-btn:hover .blob-btn__blob {
+    transform: translateZ(0) scale(1.7);
+}
+
+@supports (filter: url("#goo")) {
+    .blob-btn:hover .blob-btn__blob {
+        transform: translateZ(0) scale(1.4);
+    }
+}
