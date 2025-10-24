@@ -1,0 +1,48 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #efe4e4;
+}
+.container{
+   max-height: max-content;
+  
+   padding: 3rem;
+    background-color: #f34870;
+    /* display: grid;
+    grid-template-columns: repeat(2,1fr);*/
+   
+     /*margin-top: 10rem;*/
+    box-shadow: 5px 5px 10px 2px rgb(203, 198, 198); 
+}
+.container h2{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    color: white;
+}
+
+#email,#password,#first_name,#last_name,#phone
+{
+    border-radius: 1rem;
+    border: 1px solid white;
+    outline: none;
+    padding: 0.2rem;
+}  
+#submit
+{ border-radius: 1rem;
+    border: 1px solid white;
+    outline: none;
+    padding: 0.2rem;
+}
+
+    
+   
